@@ -119,7 +119,7 @@
             <div class="learn-how-all-screens">
               <h1>Hey there!</h1>
               <p>We need a home.</p>
-              <a href="#" class="button">Learn How</a>
+              <a  id="cta-apply-now-header" href="#" class="button">Apply Now</a>
             </div>
 
             <!-- only for desktop -->
@@ -258,7 +258,7 @@
           <div class="popup-form-block">
             
           <form
-           class="form-apply-now" 
+           class="form-apply-now"
            >
             <div class="popup-form-row">
               <div class="input-wrapper">
@@ -339,34 +339,41 @@
       });
 
       // SLIDERS
-      $('.mobile-slider').flickity({
-        // options
-        // cellAlign: 'left',
-        contain: true,
-        wrapAround: true,
-        adaptiveHeight: true,
-        pageDots: false,
-        prevNextButtons: false,
-        autoPlay: 4500,
-      });
 
-      $('.tablet-slider').flickity({
-        contain: true,
-        wrapAround: true,
-        adaptiveHeight: true,
-        pageDots: false,
-        prevNextButtons: false,
-        autoPlay: 4500,
-      });
+      // setTimeout(function() {
+        $('.mobile-slider').flickity({
+          // options
+          // cellAlign: 'left',
+          contain: true,
+          wrapAround: true,
+          adaptiveHeight: true,
+          pageDots: false,
+          prevNextButtons: false,
+          autoPlay: 4500,
+          imagesLoaded: true
+        });
 
-      $('.desktop-slider').flickity({
-        contain: true,
-        wrapAround: true,
-        adaptiveHeight: true,
-        pageDots: false,
-        prevNextButtons: true, // then move them
-        autoPlay: 4500,
-      });
+        $('.tablet-slider').flickity({
+          contain: true,
+          wrapAround: true,
+          adaptiveHeight: true,
+          pageDots: false,
+          prevNextButtons: false,
+          autoPlay: 4500,
+          imagesLoaded: true
+        });
+
+        $('.desktop-slider').flickity({
+          contain: true,
+          wrapAround: true,
+          adaptiveHeight: true,
+          pageDots: false,
+          prevNextButtons: true, // then move them
+          autoPlay: 4500,
+          imagesLoaded: true
+        });
+      // }, 300);
+      
 
       // GENERATE SELECT AGE OPTIONS
       // USING ES5 syntax here to avoid having to transpile js
@@ -397,12 +404,14 @@
       });
 
       // open popup on click of Apply Now
-      $('#cta-apply-now').on('click', function(e) {
-        
+      $('#cta-apply-now, #cta-apply-now-header').on('click', function(e) {
+        // e.preventDefault();
         $newsletterPopup.slideDown(300);
         $newsletterPopup.css('display', 'flex');
         $('body').addClass('preventAllScrollingOnBody');
       });
+
+
 
 
       // FORM SUBMISSION
