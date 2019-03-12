@@ -1,0 +1,81 @@
+// BASE STYLES 
+html {
+  font-size: 62.5%;
+  /* font-size: 10px */
+}
+
+body {
+  text-align: left;
+  font-family: $base-font;
+  font-weight: bold;
+  font-size: 1.4rem;
+  background: $accent-color;
+  color: $dark-color;
+  
+  display: flex;
+}
+
+main {
+  background: $light-color;
+}
+
+section {
+  padding: 20px 0;
+}
+
+p {
+  line-height: 2.2rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.025rem;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $dark-color;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.wrapper-main {
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 10px;
+  background: $accent-color;
+}
+
+.wrapper-narrow {
+  width: 90%;
+  margin: 0px auto;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4.1rem;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+.preventAllScrollingOnBody {
+    overflow: hidden;
+}
+
+// mobile first
+// mobile image shown by default
+.tablet-image,
+.desktop-image {
+  display: none;
+}

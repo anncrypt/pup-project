@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PAW</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <!-- the closest sans-serif I could find to match the design -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <!-- flickity slider css -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+  <!-- jquery for hamburger menu -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
+  integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+  <!-- flickity slider script -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+<body>
+  <!-- main wrapper that wraps all website content -->
+  <div class="wrapper-main">
+      <!-- homepage header starts -->
+      <header class="header">
+        <nav class="main-nav">
+          <div class="hamburger-container">
+            <!-- hamburger font awesome icon wrapped in a link -->
+            <a href="#" class="open-hamburger">
+              <img class="hamburger-icon" src="./assets/hamburger.svg" alt="hamburger icon" />
+            </a>
+            <img class="header-logo" src="./assets/Logo.png" alt="paw logo" />
+          </div>
+
+          <!-- desktop mav -->
+          <ul class="desktop-nav-list">
+            <li class="menu-item"><a href="index.html#about-paw">About Paw</a></li>
+            <li class="menu-item"><a href="index.html#learn-how">Learn How</a>
+              <ul class="sub-menu">
+                <li class="sub-menu-item"><a href="index.html#adopt-pet">Adopt a Pet</a></li>
+                <li class="sub-menu-item"><a href="index.html#volunteer">Volunteer</a></li>
+                <li class="sub-menu-item"><a href="index.html#foster">Foster</a></li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="index.html#contact-us">Contact Us</a></li>
+          </ul>
+
+          <!-- mobile nav -->
+          <div class="mobile-nav">
+            <div class="mobile-nav-controls">
+              <a href="#" class="close-hamburger">
+                <img src="./assets/close.svg" alt="close icon">
+              </a>
+            </div>
+            <ul class="mobile-nav-list">
+              <li class="main-list-element"><a href="index.html#about-paw">About Paw</a></li>
+              <li class="main-list-element"><a href="index.html#learn-how">Learn How</a>
+                <ul>
+                  <li  class="sub-list-element"><a href="index.html#adopt-pet">Adopt a Pet</a></li>
+                  <li  class="sub-list-element"><a href="index.html#volunteer">Volunteer</a></li>
+                  <li  class="sub-list-element"><a href="index.html#foster">Foster</a></li>
+                </ul>
+              </li>
+              <li class="main-list-element"><a href="index.html#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- slider -->
+        <div class="slider-container">
+          <div class="slider-wrapper">
+
+            <!-- mobile -->
+            <div class="mobile-slider">
+              <div class="mobile-slider-item">
+                <img src="./assets/Mobile/Mobile-header1.jpg" />
+              </div>
+              <div class="mobile-slider-item">
+                <img src="./assets/Mobile/Mobile-header2.jpg" />
+              </div>
+              <div class="mobile-slider-item">
+                <img src="./assets/Mobile/Mobile-header3.jpg" />
+              </div>
+            </div>
+
+            <!-- tablet -->
+            <div class="tablet-slider">
+              <div class="tablet-slider-item">
+                <img src="./assets/Tablet/Tablet-header1.jpg" />
+              </div>
+              <div class="tablet-slider-item">
+                <img src="./assets/Tablet/Tablet-header2.jpg" />
+              </div>
+              <div class="tablet-slider-item">
+                <img src="./assets/Tablet/Tablet-header3.jpg" />
+              </div>
+            </div>
+
+            <!-- desktop -->
+            <div class="desktop-slider">
+              <div class="desktop-slider-item">
+                <img src="./assets/Desktop/Desktop-header1.jpg" />
+              </div>
+              <div class="desktop-slider-item">
+                <img src="./assets/Desktop/Desktop-header2.jpg" />
+              </div>
+              <div class="desktop-slider-item">
+                <img src="./assets/Desktop/Desktop-header3.jpg" />
+              </div>
+            </div>
+
+          </div>
+
+          <div class="header-learn-how">
+            <div class="learn-how-all-screens">
+              <h1>Hey there!</h1>
+              <p>We need a home.</p>
+              <a href="#" class="button">Learn How</a>
+            </div>
+
+            <!-- only for desktop -->
+            <div class="header-learn-how-desktop">
+              <div class="slide-meta-info">
+                <div class="slide-content">
+                  <h3>Max, Dachshund</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, debitis.</p>
+                  <a href="#">Read More</a>
+                </div>
+                <div class="slide-content">
+                  <h3>Leon, Boxer</h3>
+                  <p>Ad facere ut at quam magnam cupiditate cumque nostrum quasi accusantium eos.</p>
+                  <a href="#">Read More</a>
+                </div>
+                <div class="slide-content">
+                  <h3>Sally, Golden Retriever</h3>
+                  <p>Id soluta excepturi necessitatibus eaque accusantium corporis aspernatur dignissimos!</p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+              <div id="slide-controls-container"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+
+        </div>
+      </header>
+      <!-- header ends -->
+      <!-- main starts -->
+      <main>
+        <!-- About PAW section starts -->
+        <section class="about-paw-section" id="about-paw">
+          <div class="wrapper-narrow">
+            <h2>Who is PAW?</h2>
+            <h3>Founded in 1996</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus esse enim possimus veniam omnis accusantium nisi
+              nulla eius vero, facere sequi veritatis quidem eos totam nesciunt natus quae id labore! Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Modi quam voluptatem nobis ipsa inventore debitis quasi dolores dolorum. Eveniet
+              deserunt consequuntur possimus eos!</p>
+            <a href="#" class="button">Learn More</a>
+          </div>
+        </section>
+        <!-- About PAW section ends -->
+        <!-- Adopt a Pet section starts -->
+        <section class="adopt-pet-section wrapper-narrow" id="adopt-pet">
+          <div class="pet-info-block">
+            <div class="pet-image">
+              <img class="mobile-image" src="./assets/Mobile/Mobile-header3.jpg" alt="beige fluffy puppy wearing a paper crown">
+              <img class="tablet-image" src="./assets/Tablet/Tablet-header3.jpg" alt="beige fluffy puppy wearing a paper crown">
+              <img class="desktop-image" src="./assets/Desktop/Desktop-header3.jpg" alt="beige fluffy puppy wearing a paper crown">
+            </div>
+            <div class="pet-info">
+              <p class="pet-age">2 years old</p>
+              <h3>Sally, CoonHound</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt veritatis magnam iste odio, hic atque! Quia nemo, quidem veniam corporis vitae tempora, possimus alias.</p>
+              <a href="#" class="button">Read More</a>
+            </div>
+          </div>
+          <div class="pet-info-block">
+            <div class="pet-image">
+              <img class="mobile-image" src="./assets/Mobile/Mobile-header2.jpg" alt="boxer pup in a plush bear hat">
+              <img class="tablet-image" src="./assets/Tablet/Tablet-header2.jpg" alt="boxer pup in a plush bear hat">
+              <img class="desktop-image" src="./assets/Desktop/Desktop-header2.jpg" alt="boxer pup in a plush bear hat">
+            </div>
+            <div class="pet-info">
+              <p class="pet-age">3 years old</p>
+              <h3>Leon, Boxer</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt veritatis magnam iste odio, hic atque! Quia nemo, quidem veniam corporis vitae tempora, possimus alias.</p>
+              <a href="#" class="button">Read More</a>
+            </div>
+          </div>
+        </section>
+        <!-- Adopt a Pet section ends -->
+        <!-- Volunteer section starts -->
+        <section class="volunteer-section" id="volunteer">
+          <div class="volunteer-meta-block">
+            <div class="volunteer-info wrapper-narrow">
+              <h3>Volunteer with us</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt quis voluptates necessitatibus soluta, magnam laborum officia ab perferendis vero illo.</p>
+              <a href="#" id="cta-apply-now" class="button">Apply Now</a>
+            </div>
+            <div class="shelter-hours wrapper-narrow">
+              <h3>Shelter Hours</h3>
+              <div class="timing">
+                <h4>Monday to Friday</h4>
+                <p>11am - 6pm (animal viewing until 7pm)</p>
+              </div>
+              <div class="timing">
+                <h4>Saturday and Sunday</h4>
+                <p>10am - 5pm (animal viewing until 6pm)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="volunteer-image">
+            <img class="mobile-image" src="./assets/Mobile/Mobile-volunteer.jpg" alt="volunteer with a dog" >
+            <img class="tablet-image" src="./assets/Tablet/Tablet-volunteer.jpg" alt="volunteer with a dog" >
+            <img class="desktop-image" src="./assets/Desktop/Desktop-volunteer.jpg" alt="volunteer with a dog" >
+          </div>
+
+        </section>
+        <!-- Volunteer section ends -->
+
+      </main>
+      <!-- main ends -->
+      <!-- footer starts -->
+      <footer>
+        <nav class="footer-nav-bar">
+          <ul>
+            <li><a href="#about-paw">About</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="#volunteer">Volunteer</a></li>
+            <li><a href="">Footer 5</a></li>
+            <li><a href="">Footer 6</a></li>
+            <li><a href="">Footer 7</a></li>
+            <li><a href="">Footer 8</a></li>
+          </ul>
+        </nav>
+        <p>&copy Copyright 2019 - The PAW nation</p>
+      </footer>
+      <!-- footer ends -->
+
+
+      <!-- POPUP - MODAL -->
+      <div class="newsletter-popup-overlay">
+        <div class="newsletter-popup">
+          <div class="actions-row">
+            <a href="#" class="close-icon">
+              <img src="./assets/close.svg" alt="close icon">
+            </a>
+          </div>
+          <!-- BEFORE SUBMISSION: popup-form-block is what user sees before submission -->
+          <div class="popup-form-block">
+            
+          <form
+           class="form-apply-now" 
+           >
+            <div class="popup-form-row">
+              <div class="input-wrapper">
+                <label for="first-name">Full Legal Name</label>
+                <input type="text" name="first-name" id="first-name" placeholder="First Name">
+              </div>
+              <div class="input-wrapper">
+                <label for="last-name" id="last-name" aria-hidden="true">Last Name</label>
+                <input type="text" placeholder="Last Name">
+              </div>
+            </div>
+
+            <div class="popup-form-row">
+              <div class="input-wrapper">
+                <label for="email-address">Email Address</label>
+                <input type="email" name="email-address" id="email-address" placeholder="Email Address">
+              </div>
+              <div class="input-wrapper">
+                <label for="select-age">How old are you?</label>
+                <div class="styled-select slate">
+                  <select id="select-age" name="select-age">
+                    <!-- 
+                      Options for this select are autogenerated
+                      by the script below
+                    -->
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="popup-form-row">
+              <div class="textarea-wrapper">
+                <label for="why-volunteer">Tell us about yourself</label>
+                <textarea name="why-volunteer" id="why-volunteer" rows="4" placeholder="Why do you want to volunteer?"></textarea>
+              </div>
+            </div>
+
+            <div class="popup-form-row email-consent-row">
+              <!-- checkbox here -->
+              <input class="email-consent-input" type="checkbox" name="email-consent" id="email-consent">
+              <label class="label-mini" for="email-consent">Yes, you can send me PAW Nation emails and newsletters.</label>
+            </div>
+
+            <div class="popup-form-row form-row-right">
+              <button type="submit" id="apply-now-submit-button" class="main-button">Apply Now</button>
+            </div>
+          </form>
+          </div>
+
+        <!-- AFTER SUBMISSION: popup-submission-block is what user sees after submission -->
+        <div class="popup-submission-block">
+          <img class="form-paw-icon" src="assets/LogoYellow.png">
+          <h4 class="">We thank you for your application!</h4>
+          <p>You will hear from us shortly.</p>
+        </div>
+        </div>
+      </div>
+  </div>
+  <!-- main wrapper ends -->
+
+  <!-- script for hamburger menu and sliders -->
+  <script>
+    $(document).ready(function() {
+      // MOBILE MENU
+      $('.open-hamburger').on('click', function () {
+        $('.mobile-nav').toggle("slide", { direction: "right" });
+        $('body').addClass('preventAllScrollingOnBody');
+      });
+
+      $('.close-hamburger').on('click', function () {
+        $('.mobile-nav').toggle("slide", { direction: "right" });
+        $('body').removeClass('preventAllScrollingOnBody');
+      });
+
+      $('.mobile-nav-list a').on('click', function () {
+        $('.mobile-nav').hide();
+        $('body').removeClass('preventAllScrollingOnBody');
+      });
+
+      // SLIDERS
+      $('.mobile-slider').flickity({
+        // options
+        // cellAlign: 'left',
+        contain: true,
+        wrapAround: true,
+        adaptiveHeight: true,
+        pageDots: false,
+        prevNextButtons: false,
+        autoPlay: 4500,
+      });
+
+      $('.tablet-slider').flickity({
+        contain: true,
+        wrapAround: true,
+        adaptiveHeight: true,
+        pageDots: false,
+        prevNextButtons: false,
+        autoPlay: 4500,
+      });
+
+      $('.desktop-slider').flickity({
+        contain: true,
+        wrapAround: true,
+        adaptiveHeight: true,
+        pageDots: false,
+        prevNextButtons: true, // then move them
+        autoPlay: 4500,
+      });
+
+      // GENERATE SELECT AGE OPTIONS
+      // USING ES5 syntax here to avoid having to transpile js
+      // (would do it if there was more JS code here)
+
+      var optionsHTML = '<option value="" disabled selected>Select Age</option>';
+      for (var i = 16; i < 90; i++) {
+        // optionsHTML += `<option value="${i}">${i}</option`;
+        optionsHTML += '<option value="' + i + '">' + i + '</option>';
+      }
+      $('#select-age').html(optionsHTML);
+
+      // POPUP
+      var $newsletterPopup = $('.newsletter-popup-overlay');
+      $newsletterPopup.on('click', function(e) {
+        // if someone clicks on overlay, close popup
+        // need to make sure it's on overlay only and not on the form body itself.
+        if ($(e.target).hasClass('newsletter-popup-overlay')) {
+          $(this).slideUp(300);
+          $('body').removeClass('preventAllScrollingOnBody');
+        }
+      });
+
+      // close popup on click on close icon
+      $('.close-icon').on('click', function() {
+        $newsletterPopup.slideUp(300); // hide();
+        $('body').removeClass('preventAllScrollingOnBody');
+      });
+
+      // open popup on click of Apply Now
+      $('#cta-apply-now').on('click', function(e) {
+        
+        $newsletterPopup.slideDown(300);
+        $newsletterPopup.css('display', 'flex');
+        $('body').addClass('preventAllScrollingOnBody');
+      });
+
+
+      // FORM SUBMISSION
+      $('.form-apply-now').on('submit', function(e) {
+        e.preventDefault();
+
+        // DO FORM DATA SUBMISSION HERE (POTENTIAL)
+
+        // switch to 'success screen'
+        // move away the current screen
+        $('.popup-form-block').toggle("fade", 500);
+
+        // move in the success screen
+        setTimeout(function() {
+          $('.popup-submission-block').toggle("fade", 500);
+          $('.popup-submission-block').css('display', 'flex');
+        }, 530);
+      });
+
+      // MOVE BUTTONS
+      var $controlsContainer = $('#slide-controls-container');
+      $controlsContainer.append($('.flickity-prev-next-button'));
+
+      var $prevButton = $('.flickity-button.previous');
+      var $nextButton = $('.flickity-button.next');
+
+      var $slideContentItems = $('.slide-content');
+      var currentIndex = 0;
+
+      // MAKE SLIDE CONTENT CHANGE WITH CHANGING SLIDES
+      $prevButton.on('click', function() {
+        $($slideContentItems[currentIndex]).hide();        
+        if (currentIndex === 0) {
+          currentIndex = $slideContentItems.length - 1;
+        } else {
+          currentIndex--;
+        }
+        $($slideContentItems[currentIndex]).show();
+      });
+
+      $nextButton.on('click', function () {
+        $($slideContentItems[currentIndex]).hide();
+        if (currentIndex === ($slideContentItems.length - 1)) {
+          currentIndex = 0;
+        } else {
+          currentIndex++;
+        }
+        $($slideContentItems[currentIndex]).show();
+      });
+    });
+  </script>
+</body>
+</html>

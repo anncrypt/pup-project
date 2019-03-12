@@ -1,0 +1,261 @@
+.header {
+  background: $light-color;
+  height: auto;
+
+  .main-nav {
+    .hamburger-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+      position: relative;
+
+      .open-hamburger {
+        position: absolute;
+        left: 5px;
+        top: auto;
+        bottom: auto;
+      }
+
+      .header-logo {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+
+  .slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .slider-wrapper {
+      width: 100%;
+    }
+
+    .header-learn-how {
+      position: absolute;
+      top: auto;
+      bottom: auto;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.7);
+
+      .learn-how-all-screens {
+        padding: 5rem;
+      }
+
+      .header-learn-how-desktop {
+        display: none;
+
+      }
+
+      h1 { 
+        color: $accent-color;
+        margin: 0;
+        width: 50%;
+      }
+
+      p { 
+        font-size: 2rem;
+        line-height: 5rem;
+        color: $dark-color;
+      }
+    }
+  }
+}
+
+// SLIDER BUTTON ADJUSTMENTS
+#slide-controls-container {
+  height: 60px;
+
+  .flickity-button {
+    position: relative;
+    margin: 10px;
+    left: 0;
+
+    background: $accent-color;
+    color: $light-color;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12)
+  }
+  .flickity-prev-next-button {
+    position: relative;
+  }
+}
+
+.mobile-slider {
+  width: 100%;
+
+  p {
+    color: red;
+    font-size: 5rem;
+  }
+}
+
+// DESKTOP MENU (HIDE)
+.desktop-nav-list {
+  display: none;
+}
+
+// MOBILE SLIDER
+.mobile-slider {
+  margin: 0;
+}
+
+.mobile-slider-item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+
+  img {
+    width: 100%;;
+    object-fit: cover;
+  }
+}
+
+// TABLET SLIDER
+.tablet-slider {
+  display: none;
+  margin: 0;
+}
+
+.tablet-slider-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    
+    img {
+        width: 100%;;
+        object-fit: cover;
+    }
+}
+
+// DESKTOP SLIDER
+.desktop-slider {
+    display: none;
+    // margin: 0 8px;
+    margin: 0;
+}
+
+.desktop-slider-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    img {
+      width: 100%;
+      object-fit: cover;
+  }
+}
+
+/* HAMBURGER MENU DEFAULTS */
+.mobile-nav {
+  display: none;
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: auto;
+}
+
+.hamburger-container {
+  display: none;
+  width: 100%;
+}
+
+.open-hamburger {
+  display: none;
+  margin: 20px;
+}
+
+.preventAllScrollingOnBody {
+    overflow: hidden;
+}
+
+ /* HAMBURGER MENU */
+  .open-hamburger {
+      display: block;
+      float: right;
+      margin-top: 0;
+  }
+
+  .close-hamburger {
+    margin-top: 10px;
+  }
+
+  // OPEN HAMBURGER
+  .sectionHome .narrowWrapper {
+      position: relative;
+  }
+
+  .mobile-nav-controls {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  .mobile-nav-controls a {
+    display: block;
+    height: 30px;
+    width: 30px;
+  }
+
+  // MOBILE NAV LINKS
+  .mobile-nav {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $light-color;
+    z-index: 3;
+  }
+
+  .mobile-nav-list {
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: left;
+    padding: 0;
+    list-style-type: none;
+
+    .main-list-element {
+      margin-bottom: 20px;
+      padding: 20px 0;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 3.3rem;
+      font-weight: 700;
+
+      &:active {
+        background: rgba(0, 0, 0, 0.192);
+      }
+
+      a {
+        color: $dark-grey;
+      }
+
+      ul {
+      padding-left: 0;
+      margin-top: 20px;
+      text-align: left;
+      margin-bottom: 0;
+
+      .sub-list-element {
+        padding: 10px 0;
+        font-size: 2rem;
+        font-weight: 700;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          text-transform: capitalize;
+          color: $dark-grey;
+        }
+      }
+    }
+    }
+  }

@@ -1,0 +1,396 @@
+// TABLET
+@media (min-width: 500px) {
+  // GLOBAL
+
+  .mobile-image,
+  .desktop-image {
+    display: none;
+  }
+
+  .tablet-image {
+    display: block;
+  }
+
+  a.button,
+  .main-button {
+    width: 150px;
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+  }
+
+  .newsletter-popup-overlay .newsletter-popup {
+    .popup-form-block {
+      .popup-form-row {
+        flex-direction: row;
+
+        .input-wrapper {
+          // margin-bottom: 20px;
+          width: 49%;
+        }
+      }
+    }
+  }
+
+  // HEADER 
+  .header {
+    .slider-container {
+      .header-learn-how {
+        width: 90%;
+        background: rgba(255, 255, 255, 0.7);
+        // padding: 5rem;
+
+        .learn-how-all-screens {
+          padding: 5rem;
+        }
+
+        h1 {
+          width: 100%;
+          font-size: 8rem;
+        }
+
+        p { 
+          margin-top: 3rem;
+          font-size: 5rem;
+        }
+      }
+    }
+  }
+
+  .mobile-slider,
+  .desktop-slider {
+    display: none;
+  }
+  .tablet-slider {
+    display: block;
+  }
+
+  // ABOUT PAW SECTION
+  .about-paw-section {
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+
+    .wrapper-narrow {
+      p {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+
+        max-width: 70%;
+      }
+    }
+  }
+
+  // ADOPT PET SECTION
+  .adopt-pet-section {
+    padding-top: 4rem;
+
+    .pet-info-block {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  // VOLUNTEER SECTION
+  .volunteer-section {
+    padding-top: 3.5rem;
+    flex-direction: column;
+
+    .shelter-hours {
+      margin-bottom: 7rem;
+      padding-top: 1.5rem;
+      border-top: 2px solid $dark-color;
+
+      h3 {
+        margin-bottom: 2rem;
+      }
+
+      .timing {
+        display: flex;
+        justify-content: space-between;
+
+        h4 {
+          font-size: 1.4rem;
+          margin-bottom: 0;
+
+          line-height: 1.7rem;
+        }
+
+        p {
+          max-width: none;
+          font-size: 1.3rem;
+          margin-bottom: 0;
+
+          line-height: 1.7rem;
+        }
+      }
+    }
+  }
+
+  // FOOTER
+
+  .footer-nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    // align-items: flex-start;
+    justify-content: flex-start;
+
+    height: 200px;
+    width: 80%;
+
+    li {
+      width: 30%;
+    }
+  }
+}
+
+
+
+// DESKTOP
+@media (min-width: 769px) {
+  .mobile-image,
+  .tablet-image {
+    display: none;
+  }
+
+  .desktop-image {
+    display: block;
+  }
+  
+
+    // POPUP
+  .newsletter-popup-overlay {
+     align-items: center;
+
+    .newsletter-popup {
+      width: 70%;
+      height: 630px;
+
+      .actions-row {
+        margin-top: 0;
+      }
+
+
+      // TRIAL
+      justify-content: flex-end;
+    }
+  }
+
+  // HEADER DESKTOP NAV (SHOW)
+  .desktop-nav-list {
+    display: flex;
+
+  }
+  // HIDE HAMBURGER
+  .hamburger-container {
+    width: 80px;
+  }
+
+  .open-hamburger {
+    display: none;
+  }
+
+  .desktop-nav-list {
+    align-items: center;
+    padding-left: 0;
+    margin-right: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .desktop-nav-list li {
+    margin-left: 30px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+
+    .sub-menu {
+      display: none;
+    }
+  }
+
+  .desktop-nav-list li {
+    position: relative;
+  }
+
+  .desktop-nav-list li:hover a {
+    // opacity: 0.6;
+    color: $accent-color;
+  }
+
+  .desktop-nav-list li:hover ul {
+    border-top: 5px solid $dark-grey;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: 70px;
+    left: -55px; // 0;
+    z-index: 4;
+    background: $light-color;
+    padding: 10px;
+
+    width: 200px;
+
+    li {
+      height: 30px;
+      margin-left: 0;
+      
+      a { 
+        text-transform: capitalize;
+        color: $dark-grey;
+      }
+
+      a:hover {
+        color: $accent-color;
+      }
+    }
+
+    // li:hover {
+    //   opacity: 1;
+    // }
+
+
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // END OF POPUP
+
+  // SLIDE SECTION
+
+  .header {
+    .slider-container {
+      .header-learn-how {
+
+        .learn-how-all-screens {
+          background: $light-color;
+        }
+
+        background: transparent; // $light-color;
+        width: 600px;
+        right: 10px;
+
+        h1 {
+          font-size: 6rem;
+        }
+
+        p {
+          margin-top: 10px;
+          margin-bottom: 20px;
+          font-size: 3rem;
+        }
+
+        a.button, .main-button {
+          margin-bottom: 0;
+        }
+
+        .learn-how-all-screens {
+          padding: 4rem;
+        }
+        
+
+      }
+    }
+  }
+
+  .header .slider-container {
+    .header-learn-how .header-learn-how-desktop {
+      display: flex;
+      align-items: flex-end;
+      padding: 4rem;
+
+      background-color: rgba(254, 234, 85, 0.70);
+
+      .slide-meta-info {
+        width: 70%;
+
+        .slide-content {
+          display: none;
+
+          h3 {
+            font-size: 2rem;
+          }
+          
+          p {
+            margin: 0;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+            line-height: 1.6rem;
+          }
+
+          a {
+            text-transform: uppercase;
+            font-weight: bold;
+
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+        }
+
+        .slide-content:first-child {
+          display: block;
+        }
+      }
+
+    }
+  }
+  
+
+  .mobile-slider,
+  .tablet-slider {
+    display: none;
+  }
+  .desktop-slider {
+    display: block;
+  }
+  
+
+  // ADOPT PET SECTION
+  .adopt-pet-section {
+    .pet-info-block:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+
+    .pet-info-block {
+      justify-content: space-between;
+
+      .pet-image {
+        width: 50%;
+      }
+      .pet-info {
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      }
+    }
+  }
+
+  // VOLUNTEER SECTION
+  .volunteer-section {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+    justify-content: space-between;
+
+    .volunteer-image {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  // FOOTER
+  .footer-nav-bar ul {
+    height: 100px;
+    width: 60%;
+  }
+}

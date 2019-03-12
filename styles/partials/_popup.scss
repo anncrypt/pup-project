@@ -1,0 +1,188 @@
+.newsletter-popup-overlay {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+
+  display: none;
+  justify-content: center;
+
+  .newsletter-popup {
+    background-color: $light-color;
+    width: 100%;
+    max-width: 800px;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    
+    padding: 0 4rem;
+
+    // BEFORE SUBMISSION
+    .popup-form-block {
+      width: 100%;
+
+      .actions-row {
+        width: 100%;
+        display: flex;
+        
+      }
+
+      .popup-form-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        .input-wrapper {
+          width: 49%;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .textarea-wrapper {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      .form-row-right {
+        justify-content: flex-end;
+      }
+
+      .email-consent-row {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .email-consent-input {
+          margin-right: 15px;
+        }
+
+        .label-mini {
+          font-size: 1.1rem;
+          margin: 0;
+        }
+      }
+
+    }
+
+    // AFTER SUBMISSION
+    .popup-submission-block {
+      display: none;
+      width: 100%;
+      margin-bottom: 30px;
+      height: 50vh;
+
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h4 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+
+      .form-paw-icon {
+        width: 130px;
+        height: auto;
+
+      }
+
+    }
+  }
+}
+
+.close-icon {
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-color: none;
+}
+
+// GENERAL INPUTS
+input,
+textarea {
+  border: 1px solid $medium-grey;
+  padding: 14px;
+}
+
+select {
+  padding: 30px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: $medium-grey;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.styled-select {
+    border: 1px solid #ccc;
+    height: 48px;
+    overflow: hidden;
+    background: #fff url("../assets/select-icon.png") no-repeat 97% 50%;
+    background-size: 20px;
+}
+
+.styled-select select {
+    padding: 5px 8px;
+    line-height: 3.5rem;
+
+    // width: 110%;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.styled-select select:focus {
+    outline: none;
+}
+
+// mobile-first for form
+.newsletter-popup-overlay .newsletter-popup {
+  .actions-row {
+    margin-top: 20px;
+
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
+  .popup-form-block {
+    .popup-form-row {
+      flex-direction: column;
+
+      .input-wrapper {
+        margin-bottom: 20px;
+        width: 100%;
+      }
+    }
+    .email-consent-row {
+      flex-direction: row;
+    }
+  }
+}
+
